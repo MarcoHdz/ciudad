@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mexico-City</title>
+</head>
+<body>
+<h1>Lista de Anuncios</h1>
+<ul>
+<li><a href="/">Inicio</a></li>
+</ul>
+<ul>
+<li>
+<a href="/posts">Agregar nuevo</a>
+</li>
+</ul>
+<ul>
+	{% for ciudad in city%}
+	<li><strong>Name</strong></li><p>{{ciudad.name}}</p>
+	<li><strong>Description</strong></li><p>{{ciudad.description}}</p>
+	<li><strong>Address</strong></li><p>{{ciudad.address}}</p>
+	<li><strong>Extra</strong></li><p>{{ciudad.extra}}</p>
+	<br>
+	{% endfor %}
+</ul>
+</body>
+</html>
